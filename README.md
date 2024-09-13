@@ -1,0 +1,2 @@
+# pw-auto
+Playwright template
