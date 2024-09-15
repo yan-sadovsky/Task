@@ -1,0 +1,28 @@
+{
+  "name": "pw-auto",
+  "version": "1.0.0",
+  "repository": "git@github.com:masterjohndoe/pw-auto.git",
+  "author": "Master Lao",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "yarn clean && yarn install --frozen-lockfile && yarn playwright install --with-deps && tsc",
+    "clean": "rm -rf node_modules allure-results dist playwright-report test-results",
+    "format": "prettier --config .prettierrc 'src/**/*.ts' 'tests/**/*.ts' --write",
+    "tests": "npx playwright test",
+    "tests:headed": "npx playwright test --headed",
+    "allure:report": "allure serve"
+  },
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "socket.io-client": "4.7.5",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "9.0.1",
+    "@playwright/test": "1.47.0",
+    "@types/node": "22.5.4",
+    "allure-playwright": "3.0.0-beta.12",
+    "prettier": "3.3.3",
+    "typescript": "5.6.2"
+  }
+}
