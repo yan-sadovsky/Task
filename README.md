@@ -3,10 +3,13 @@
 ### **Project setup**
 
 1. create `.env` file if not exists (example in [env.test](env.test))
+
 ```
 cp env.test .env
 ```
-2. run setup
+
+2. run setup (require rimraf: npm install --global rimraf)
+
 ```
 yarn start
 ```
@@ -19,6 +22,7 @@ yarn tests:headed
 ```
 
 ### **Show allure report**
+
 ```
 yarn allure:report
 ```

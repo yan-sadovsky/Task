@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "yarn clean && yarn install --frozen-lockfile && yarn playwright install --with-deps chromium && tsc",
-    "clean": "rm -rf node_modules allure-results dist playwright-report test-results",
+    "clean": "rimraf node_modules allure-results dist playwright-report test-results",
     "format": "prettier --config .prettierrc 'src/**/*.ts' 'tests/**/*.ts' --write",
     "tests": "npx playwright test",
     "tests:headed": "npx playwright test --headed",
